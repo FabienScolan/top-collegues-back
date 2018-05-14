@@ -28,7 +28,7 @@ public class CollegueCtrl {
 		return this.collegueRepo.findAll();
 	}
 
-	@RequestMapping(value = "/collegues/{pseudo}", method = RequestMethod.PATCH)
+	@RequestMapping(value = "/{pseudo}", method = RequestMethod.PATCH)
 	public ResponseEntity<?> patchCollegue(@PathVariable("pseudo") String pseudo, @RequestBody Action action) {
 		// logger.info("Fetching User with id {}", id);
 		Collegue collegue = null;
